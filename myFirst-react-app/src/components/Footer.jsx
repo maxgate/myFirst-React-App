@@ -11,8 +11,8 @@ import {
 } from "../constants";
 
 const Footer = () => (
-  <section className={` ${styles.paddingY} ${styles.paddingX} mx-12`}>
-    <div className={` grid lg:grid-cols-6  mb-8 `}>
+  <section className={` ${styles.paddingY} ${styles.paddingX}  mx-12`}>
+    <div className={` grid lg:grid-cols-6 sm:flex-cols mb-8 `}>
       <div className=" px-20 mt-8 col-span-2 mr-12">
         <img
           src={footerLogo}
@@ -22,7 +22,7 @@ const Footer = () => (
         <p className={`mt-4 px- text-xs text-gray-600`}>© 2024 Postman, Inc.</p>
       </div>
 
-      <div className="  ml-12">
+      <div className="">
         {footerProducts.map((footerLink) => (
           <div key={footerLink.id} className="  ">
             <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
@@ -44,7 +44,7 @@ const Footer = () => (
         ))}
       </div>
 
-      <div>
+      <div className="">
         <div className="  ">
           {footerCompany.map((footerLink) => (
             <div key={footerLink.id} className="  ">
@@ -89,7 +89,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div>
+      <div className="">
         <div className="  ">
           {footerAPI.map((footerLink) => (
             <div key={footerLink.id} className="  ">
@@ -134,7 +134,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="  ">
+      <div className=" px-8 ">
         {footerSocial.map((footerLink) => (
           <div key={footerLink.id} className="  ">
             <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
