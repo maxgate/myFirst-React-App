@@ -1,12 +1,5 @@
 import styles from "../style";
-import {
-  footerLogo,
-  twitter,
-  twitch,
-  youtube,
-  linkedin,
-  github,
-} from "../assets/index";
+import { footerLogo } from "../assets/index";
 
 import {
   footerProducts,

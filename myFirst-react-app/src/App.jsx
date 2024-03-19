@@ -22,8 +22,8 @@ const App = () => (
     <Update />
     <Post />
     <SpotLight />
-    <GetStarted/>
-    <Footer/>
+    <GetStarted />
+    <Footer />
   </div>
 );
 
