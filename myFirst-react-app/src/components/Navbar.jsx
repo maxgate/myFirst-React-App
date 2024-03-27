@@ -9,7 +9,7 @@ const Navbar = () => {
       <img src={logo} alt="logo" className=" cursor-pointer" />
 
       <ul className=" list-none sm:flex hidden justify-start items-center flex-1">
-        {navLinks.map((nav, index) => (
+        {navLinks.map((nav) => (
           <li
             key={nav.id}
             className={`font-poppins font-semibold  text-gray-500 cursor-pointern text-[13px] px-2 mr-3 `}

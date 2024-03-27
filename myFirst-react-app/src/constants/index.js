@@ -13,14 +13,6 @@ import {
   talon,
   ups,
   withings,
-  buble,
-  cisco,
-  google,
-  hubspot,
-  monster,
-  sentry,
-  siemens,
-  whatsApp,
   twitter,
   linkedin,
   github,
@@ -191,7 +183,7 @@ export const updateCard = [
   },
 ];
 
-export const footerProducts = [
+export const footerLinks = [
   {
     title: "Product",
     id: "Link-1",
@@ -228,9 +220,6 @@ export const footerProducts = [
       },
     ],
   },
-];
-
-export const footerCompany = [
   {
     title: "Company",
     id: "Link-2",
@@ -252,9 +241,6 @@ export const footerCompany = [
       },
     ],
   },
-];
-
-export const footerAPI = [
   {
     title: "API Categories",
     id: "Link-3",
@@ -276,9 +262,6 @@ export const footerAPI = [
       },
     ],
   },
-];
-
-export const footerSecurity = [
   {
     title: "Legal and Security",
     id: "Link-4",
@@ -300,9 +283,6 @@ export const footerSecurity = [
       },
     ],
   },
-];
-
-export const footerExplore = [
   {
     title: "Explore public",
     id: "Link-5",
@@ -318,9 +298,6 @@ export const footerExplore = [
       },
     ],
   },
-];
-
-export const footerSocial = [
   {
     title: "Social",
     id: "Link-6",

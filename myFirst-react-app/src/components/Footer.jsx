@@ -1,14 +1,7 @@
 import styles from "../style";
-import { footerLogo } from "../assets/index";
+import { footerLogo  } from "../assets/index";
 
-import {
-  footerProducts,
-  footerCompany,
-  footerAPI,
-  footerExplore,
-  footerSecurity,
-  footerSocial,
-} from "../constants";
+import { footerLinks } from "../constants";
 
 const Footer = () => (
   <section className={` ${styles.paddingY} ${styles.paddingX}  mx-12`}>
@@ -17,13 +10,13 @@ const Footer = () => (
         <img
           src={footerLogo}
           alt="hoobank"
-          className="min-w-[100px] min-h-[50px]"
+          className="min-w-[100px] min-h-20   "
         />
         <p className={`mt-4 px- text-xs text-gray-600`}>© 2024 Postman, Inc.</p>
       </div>
 
-      <div className="">
-        {footerProducts.map((footerLink) => (
+      <div className="flex flex-row gap-12    px-16">
+        {footerLinks.map((footerLink) => (
           <div key={footerLink.id} className="  ">
             <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
               {footerLink.title}
@@ -37,120 +30,6 @@ const Footer = () => (
                   }`}
                 >
                   {link.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="">
-        <div className="  ">
-          {footerCompany.map((footerLink) => (
-            <div key={footerLink.id} className="  ">
-              <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
-                {footerLink.title}
-              </h4>
-              <ul className=" list-none mt-4">
-                {footerLink.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-poppins font-normal text-[12px] leading-[24px] text-gray-600 hover:text-blue-500 cursor-pointer ${
-                      index !== footerLink.links.length - 1 ? "mb-4" : "mb-00"
-                    }`}
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className=" pt-4 ">
-          {footerSecurity.map((footerLink) => (
-            <div key={footerLink.id} className="  ">
-              <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
-                {footerLink.title}
-              </h4>
-              <ul className=" list-none mt-4">
-                {footerLink.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-poppins font-normal text-[12px] leading-[24px] text-gray-600 hover:text-blue-500 cursor-pointer ${
-                      index !== footerLink.links.length - 1 ? "mb-4" : "mb-00"
-                    }`}
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="">
-        <div className="  ">
-          {footerAPI.map((footerLink) => (
-            <div key={footerLink.id} className="  ">
-              <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
-                {footerLink.title}
-              </h4>
-              <ul className=" list-none mt-4">
-                {footerLink.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-poppins font-normal text-[12px] leading-[24px] text-gray-600 hover:text-blue-500 cursor-pointer ${
-                      index !== footerLink.links.length - 1 ? "mb-4" : "mb-00"
-                    }`}
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className=" pt-4 ">
-          {footerExplore.map((footerLink) => (
-            <div key={footerLink.id} className="  ">
-              <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
-                {footerLink.title}
-              </h4>
-              <ul className=" list-none mt-4">
-                {footerLink.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-poppins font-normal text-[12px] leading-[24px] text-gray-600 hover:text-blue-500 cursor-pointer ${
-                      index !== footerLink.links.length - 1 ? "mb-4" : "mb-00"
-                    }`}
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className=" px-8 ">
-        {footerSocial.map((footerLink) => (
-          <div key={footerLink.id} className="  ">
-            <h4 className=" font-poppins font-semibold text-[16px] leading-[27px] text-gray-500">
-              {footerLink.title}
-            </h4>
-            <ul className=" list-none mt-4">
-              {footerLink.links.map((link, index) => (
-                <li
-                  key={link.name}
-                  className={`font-poppins font-normal text-[12px] leading-[24px] text-gray-600 hover:text-blue-500 cursor-pointer ${
-                    index !== footerLink.links.length - 1 ? "mb-4" : "mb-00"
-                  }`}
-                >
-                  <span className="flex gap-2">
-                    <img src={link.img} alt="" /> {link.name}
-                  </span>
                 </li>
               ))}
             </ul>
