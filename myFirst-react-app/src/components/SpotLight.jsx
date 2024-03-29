@@ -16,13 +16,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SpotLight = () => (
-  <section className={` pt[16px] mt-10 font-poppins`}>
+  <section className={` pt-[16px] mt-10 font-poppins`}>
     <div className={`paddingX `}>
       <div>
-        <h3 className="text-[24px] font-bold text-gray-900">
-          In the Spotlight
-        </h3>
-        <p className="text-[11px] text-gray-600 ">
+        <h3 className="text-2xl font-bold text-gray-900">In the Spotlight</h3>
+        <p className="text-xs text-gray-600 ">
           The best APIs, collections, and workspaces handpicked by Postman.
           <span className="text-blue-600 hover:underline">
             See what more is in the spotlight →
@@ -31,10 +29,10 @@ const SpotLight = () => (
       </div>
       <div className=" grid lg:grid-cols-2 sm:grid-cols-1 gap-x-6">
         <div className="py-6 font-poppins border-b">
-          <h2 className="text-[16px] text-gray-700 font-semibold ">
+          <h2 className="text-base text-gray-700 font-semibold ">
             Trending APIs this week
           </h2>
-          <p className="text-[11px] text-gray-600 ">
+          <p className="text-xs text-gray-600 ">
             There’s an API for that: discover the APIs, workspaces, and
             collections the Postman community is creating, viewing, and forking.
             <span className="text-blue-600 hover:text-blue-500 hover:underline decoration-blue-500">
@@ -233,14 +231,14 @@ const SpotLight = () => (
             />
           </div>
           <div className="">
-            <h2 className="text-[14px] text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
+            <h2 className="text-sm text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
               DocuSign's Public Workspace
             </h2>
-            <p className="text-[11px] pt-4 pb-4 text-gray-800 hover:cursor-pointer">
+            <p className="text-xs pt-4 pb-4 text-gray-800 hover:cursor-pointer">
               This is DocuSign's public workspace that inludes Postman
               collections for all of our APIs.
             </p>
-            <p className=" pt- text-[12px] text-gray-600 ">
+            <p className=" pt- text-xs text-gray-600 ">
               <span className="px-2">
                 <FontAwesomeIcon icon="fa fa-th-large" /> Workspace
               </span>
@@ -263,11 +261,11 @@ const SpotLight = () => (
             <h2 className="text-[14px] text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
               Google Chrome Enterprise [public]
             </h2>
-            <p className="text-[11px] pt-4 pb-4 text-gray-800 hover:cursor-pointer">
+            <p className="text-xs pt-4 pb-4 text-gray-800 hover:cursor-pointer">
               Google Chrome Browser Enterprise for Chrome Browser Cloud
               Management APIs
             </p>
-            <p className=" pt-4 text-[12px] text-gray-600 ">
+            <p className=" pt-4 text-xs text-gray-600 ">
               <span className="hover:underline">
                 By Google Chrome Browser Enterprise
               </span>
@@ -290,13 +288,13 @@ const SpotLight = () => (
             />
           </div>
           <div className="">
-            <h2 className="text-[14px] text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
+            <h2 className="text-sm text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
               Sportradar Media APIs
             </h2>
-            <p className="text-[11px] pt-6 pb-4 text-gray-800 hover:cursor-pointer">
+            <p className="text-xs pt-6 pb-4 text-gray-800 hover:cursor-pointer">
               This is a public workspace for the Sportradar Media APIs.
             </p>
-            <p className=" pt- text-[12px] text-gray-600 ">
+            <p className=" pt- text-xs text-gray-600 ">
               <span className="px-2">
                 <FontAwesomeIcon icon="fa fa-th-large" /> Workspace
               </span>
@@ -316,13 +314,13 @@ const SpotLight = () => (
             <img src={buble} alt="sentry API" className="w-[40px] h-[35px] " />
           </div>
           <div className="">
-            <h2 className="text-[14px] text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
+            <h2 className="text-sm text-gray-700 font-semibold hover:text-blue-500 hover:underline decoration-blue-500">
               Bubble
             </h2>
-            <p className="text-[11px] pt-4 pb-4 text-gray-800 hover:cursor-pointer">
+            <p className="text-xs pt-4 pb-4 text-gray-800 hover:cursor-pointer">
               How to leverage Bubble's APIs
             </p>
-            <p className=" pt-4 text-[12px] text-gray-600 ">
+            <p className=" pt-4 text-xs text-gray-600 ">
               <span className="hover:underline">By Bubble</span>
               <span className="px-2">
                 {" "}
@@ -336,31 +334,27 @@ const SpotLight = () => (
     </div>
 
     <div className={`paddingY`}>
-      <h2
-        className={`paddingX font-poppins text-[20px] font-semibold`}
-      >
+      <h2 className={`paddingX font-poppins text-[20px] font-semibold`}>
         Popular teams{" "}
-        <span className="font-normal text-[14px] text-blue-600 hover:underline">
+        <span className="font-normal text-sm text-blue-600 hover:underline">
           {" "}
           View all teams →
         </span>
       </h2>
 
-      <div
-        className={`grid lg:grid-cols-4 sm:grid-cols-1  paddingX pt-[16px] `}
-      >
+      <div className={`grid lg:grid-cols-4 sm:grid-cols-1  paddingX pt-4 `}>
         <div className=" mr-6 font-poppins px-4 py-4 hover:bg-gray-100 border ">
           <div className="px-4 ">
             <img src={ups} alt="sentry API" className="w-[40px] h-[35px] " />
           </div>
           <div className="">
-            <h2 className="pt-4 text-[14px] text-gray-700 font-semibold hover:text-blue-600 hover:underline decoration-blue-500">
+            <h2 className="pt-4 text-sm text-gray-700 font-semibold hover:text-blue-600 hover:underline decoration-blue-500">
               UPS Developers
             </h2>
-            <p className="text-[11px] pt-2  text-gray-800 hover:cursor-pointer">
+            <p className="text-xs pt-2  text-gray-800 hover:cursor-pointer">
               UPS public logistics APIs
             </p>
-            <p className=" pt-16 text-[12px] text-gray-600 ">
+            <p className=" pt-16 text-xs text-gray-600 ">
               <span>500k+ views</span>
               <span className="px-2">
                 <FontAwesomeIcon icon="fa fa-cart-arrow-down" /> 10+ collections

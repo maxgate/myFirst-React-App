@@ -4,7 +4,7 @@ import { updateCard } from "../constants";
 const Update = () => (
   <section>
     <div>
-      <h2 className={`text-[26px] font-semibold paddingX pt-20 font-poppins`}>
+      <h2 className={`text-2xl font-semibold paddingX pt-20 font-poppins`}>
         What's happening on Postman
       </h2>
       <h4 className={`paddingX font-semibold text-gray-700`}>
