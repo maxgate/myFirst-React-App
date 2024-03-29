@@ -1,12 +1,10 @@
 import { appleLogo, homepageImage, linuxLogo, microsoftLogo } from "../assets";
-import styles from "../style";
 
-styles;
 const Hero = () => (
   <section id="home" className="flex sm:flex-row flex-col">
     <div className="pt-36">
       <h2
-        className={`${styles.paragraph} font-poppins ${styles.paddingX}  text-[36px] text-bold `}
+        className={`paragraph font-poppins paddingX  text-[36px] text-bold `}
       >
         <span className="text-[40px] font-semibold font-serif pt-6 leading-10 ">
           Build
@@ -24,7 +22,7 @@ const Hero = () => (
         Over 30 million developers use Postman. Get <br />
         started by signing up or downloading the desktop app.
       </h3>
-      <div className={` flex ${styles.paddingX} mt-6 `}>
+      <div className={` flex paddingX mt-6 `}>
         <input
           type="email"
           name="email"
@@ -37,7 +35,7 @@ const Hero = () => (
       </div>
 
       <div
-        className={`${styles.paddingX} text-sm pt-4 text-gray-500 font-semibold`}
+        className={`paddingX text-sm pt-4 text-gray-500 font-semibold`}
       >
         <h5>Download the desktop app for</h5>
         <span className="flex py-2 ">

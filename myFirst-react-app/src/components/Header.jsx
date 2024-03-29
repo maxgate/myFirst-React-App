@@ -1,6 +1,4 @@
-import React from "react";
 import { homepageheaderImg } from "../assets/index.js";
-import styles from "../style.js";
 import { headerFeatures } from "../constants/index.js";
 import HeaderCard from "./headerCard.jsx";
 
@@ -14,18 +12,18 @@ const Header = () => (
       />
 
       <h2
-        className={`text-[24px] font-semibold ${styles.paddingX} font-poppins`}
+        className={`text-[24px] font-semibold paddingX font-poppins`}
       >
         What is Postman?
       </h2>
-      <h4 className={`${styles.paddingX} text-gray-600`}>
+      <h4 className={`paddingX text-gray-600`}>
         Postman is an API platform for building and using APIs. Postman
         simplifies each step of <br />
         the API lifecycle and streamlines collaboration so you can create better
         APIs—faster.
       </h4>
       <div
-        className={`grid lg:grid-cols-4 sm:grid-cols-2  ${styles.paddingX}sm:justify-start my-4 justify-center sm:w-full xs:grid-cols-2 `}
+        className={`grid lg:grid-cols-4 sm:grid-cols-2  paddingX sm:justify-start my-4 justify-center sm:w-full xs:grid-cols-2 `}
       >
         {headerFeatures.map((card) => (
           <HeaderCard key={card.id} {...card} />

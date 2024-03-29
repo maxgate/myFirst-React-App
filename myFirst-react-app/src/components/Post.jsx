@@ -1,9 +1,8 @@
-import styles from "../style";
 import { postcon24, postShield, postAnnual } from "../assets/index";
 
 const Post = () => (
   <section className="bg-[#1B1340] w-full h-[320px] overflow-hidden">
-    <div className={`grid lg:grid-cols-2 sm:grid-cols-1 ${styles.paddingX} ${styles.paddingY}`}>
+    <div className={`grid lg:grid-cols-2 sm:grid-cols-1 paddingX paddingY`}>
       <div className="">
         <div className="py-4">
           <img src={postcon24} alt="postcon24" className="w-[415px] h-[39px]" />

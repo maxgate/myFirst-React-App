@@ -2,7 +2,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import styles from "./style";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Header from "./components/Header.jsx";
@@ -14,7 +13,7 @@ import Footer from "./components/Footer.jsx";
 
 const App = () => (
   <div className=" bg-white w-full overflow-hidden ">
-    <div className={`${styles.boxWidth} pt-2 pl-2`}>
+    <div className={`boxWidth pt-2 pl-2`}>
       <Navbar />
     </div>
     <Hero />

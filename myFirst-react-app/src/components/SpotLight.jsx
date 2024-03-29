@@ -1,4 +1,3 @@
-import styles from "../style";
 import {
   sentry,
   ups,
@@ -18,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SpotLight = () => (
   <section className={` pt[16px] mt-10 font-poppins`}>
-    <div className={`${styles.paddingX} `}>
+    <div className={`paddingX `}>
       <div>
         <h3 className="text-[24px] font-bold text-gray-900">
           In the Spotlight
@@ -336,9 +335,9 @@ const SpotLight = () => (
       </div>
     </div>
 
-    <div className={`${styles.paddingY}`}>
+    <div className={`paddingY`}>
       <h2
-        className={`${styles.paddingX} font-poppins text-[20px] font-semibold`}
+        className={`paddingX font-poppins text-[20px] font-semibold`}
       >
         Popular teams{" "}
         <span className="font-normal text-[14px] text-blue-600 hover:underline">
@@ -348,7 +347,7 @@ const SpotLight = () => (
       </h2>
 
       <div
-        className={`grid lg:grid-cols-4 sm:grid-cols-1  ${styles.paddingX} pt-[16px] `}
+        className={`grid lg:grid-cols-4 sm:grid-cols-1  paddingX pt-[16px] `}
       >
         <div className=" mr-6 font-poppins px-4 py-4 hover:bg-gray-100 border ">
           <div className="px-4 ">

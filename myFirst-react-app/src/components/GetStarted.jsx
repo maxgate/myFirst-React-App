@@ -1,10 +1,8 @@
-import React from "react";
-import styles from "../style";
 import { getstartedImg } from "../assets/index";
 
 const GetStarted = () => (
   <section className="bg-gray-100">
-    <div className={`${styles.paddingX} py-12`}>
+    <div className={`paddingX py-12`}>
       <div className="grid lg:grid-cols-2 sm:grid-cols-1">
         <div>
           <h2 className=" font-poppins font-semibold text-[20px]">
